@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 477 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Number Sequence Game</h2>
+<h3>Problem 477</h3>
+<div style="font-size:80%;color:#999;">Published on 23 August 2014 at 04:00 pm [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>The number sequence game starts with a sequence <var>S</var> of <var>N</var> numbers written on a line.</p>
+<p>Two players alternate turns. At his turn, a player must select and remove either the first or the last number remaining in the sequence.</p>
+<p>The player score is the sum of all the numbers he has taken. Each player attempts to maximize his own sum.</p>
+If <var>N</var> = 4 and <var>S</var> = {1, 2, 10, 3}, then each player maximizes his score as follows:
+<ul>
+<li>Player 1: removes the first number (1)</li>
+<li>Player 2: removes the last number from the remaining sequence (3)</li>
+<li>Player 1: removes the last number from the remaining sequence (10)</li>
+<li>Player 2: removes the remaining number (2)</li>
+</ul>
+<p>Player 1 score is 1 + 10 = 11.</p>
+<p>Let <var>F</var>(<var>N</var>) be the score of player 1 if both players follow the optimal strategy for the sequence <var>S</var> = {<var>s</var><sub>1</sub>, <var>s</var><sub>2</sub>, ..., <var>s<sub>N</sub></var>} defined as:</p>
+<ul>
+<li>
+<var>s</var><sub>1</sub> = 0</li>
+<li>
+<var>s</var><sub><var>i</var>+1</sub> = (<var>s<sub>i</sub></var><sup>2</sup> + 45) modulo 1 000 000 007</li>
+</ul>
+<p>The sequence begins with <var>S</var> = {0, 45, 2070, 4284945, 753524550, 478107844, 894218625, ...}.</p>
+<p>You are given <var>F</var>(2) = 45, <var>F</var>(4) = 4284990, <var>F</var>(100) = 26365463243, <var>F</var>(10<sup>4</sup>) = 2495838522951.</p>
+<p>Find <var>F</var>(10<sup>8</sup>).</p>
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=10.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

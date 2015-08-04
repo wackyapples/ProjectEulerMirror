@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 422 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "7034610688a8851f742f912143c1bcf") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Sequence of points on a hyperbola</h2>
+<h3>Problem 422</h3>
+<div style="font-size:80%;color:#999;">Published on 07 April 2013 at 07:00 am [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>Let H be the hyperbola defined by the equation 12<var>x</var><sup>2</sup> + 7<var>x</var><var>y</var> - 12<var>y</var><sup>2</sup> = 625.</p>
+
+<p>Next, define X as the point (7, 1). It can be seen that X is in H.</p>
+
+<p>Now we define a sequence of points in H, {P<sub><var>i</var></sub> : <var>i</var> ≥ 1}, as:
+</p>
+<ul>
+<li> P<sub>1</sub> = (13, 61/4).
+</li>
+<li> P<sub>2</sub> = (-43/6, -4).
+</li>
+<li> For <var>i</var> &gt; 2, P<sub><var>i</var></sub> is the unique point in H that is different from P<sub><var>i</var>-1</sub> and such that line P<sub><var>i</var></sub>P<sub><var>i</var>-1</sub> is parallel to line P<sub><var>i</var>-2</sub>X. It can be shown that P<sub><var>i</var></sub> is well-defined, and that its coordinates are always rational.
+</li>
+</ul>
+<img src="project/images/p422_hyperbola.gif">
+
+
+<p>You are given that P<sub>3</sub>  = (-19/2, -229/24), P<sub>4</sub> = (1267/144, -37/12) and P<sub>7</sub> = (17194218091/143327232, 274748766781/1719926784).</p>
+
+<p>Find P<sub><var>n</var></sub> for <var>n</var> = 11<sup>14</sup> in the following format:<br>If P<sub><var>n</var></sub> = (<var>a</var>/<var>b</var>, <var>c</var>/<var>d</var>) where the fractions are in lowest terms and the denominators are positive, then the answer is (<var>a</var> + <var>b</var> + <var>c</var> + <var>d</var>) mod 1 000 000 007.</p>
+
+<p>For <var>n</var> = 7, the answer would have been: 806236837.</p>
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=9.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

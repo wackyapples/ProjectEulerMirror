@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 155 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "da0a3fc900cc8a42d51428052439") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Counting Capacitor Circuits</h2>
+<h3>Problem 155</h3>
+<div style="font-size:80%;color:#999;">Published on 19 May 2007 at 02:00 am [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>An electric circuit uses exclusively identical capacitors of the same value C.
+<br>
+The capacitors can be connected in series or in parallel to form sub-units, which can then be connected in series or in parallel with other capacitors or other sub-units to form larger sub-units, and so on up to a final circuit.</p>
+<p>Using this simple procedure and up to <var>n</var> identical capacitors, we can make circuits having a range of different total capacitances. For example, using up to <var>n</var>=3 capacitors of 60 <img src="project/images/p155_capsmu.gif" width="12" height="21" alt="" style="vertical-align:middle;">F each, we can obtain the following 7 distinct total capacitance values: </p>
+<div style="text-align:center;"><img src="project/images/p155_capacitors1.gif" width="387" height="557" alt=""></div>
+<p>If we denote by <var>D</var>(<var>n</var>) the number of distinct total capacitance values we can obtain when using up to <var>n</var> equal-valued capacitors and the simple procedure described above, we have: <var>D</var>(1)=1, <var>D</var>(2)=3, <var>D</var>(3)=7 ...</p>
+<p>Find <var>D</var>(18).</p>
+<p><i>Reminder :</i> When connecting capacitors C<sub>1</sub>, C<sub>2</sub> etc in parallel, the total capacitance is C<sub>T</sub> = C<sub>1</sub> + C<sub>2</sub> +...,
+<br>
+whereas when connecting them in series, the overall capacitance is given by:
+<img src="project/images/p155_capsform.gif" width="127" height="38" alt="" style="vertical-align:middle;"></p>
+
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=4.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

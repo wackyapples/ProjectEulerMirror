@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 314 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "aa457ca6f67945d50683a85a9b70230") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>The Mouse on the Moon</h2>
+<h3>Problem 314</h3>
+<div style="font-size:80%;color:#999;">Published on 12 December 2010 at 07:00 am [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>
+The moon has been opened up, and land can be obtained for free, but there is a catch. You have to build a wall around the land that you stake out, and building a wall on the moon is expensive. Every country has been allotted a 500 m by 500 m square area, but they will possess only that area which they wall in. 251001 posts have been placed in a rectangular grid with 1 meter spacing. The wall must be a closed series of straight lines, each line running from post to post.
+</p>
+<p>
+The bigger countries of course have built a 2000 m wall enclosing the entire 250 000 m<sup>2</sup> area. The <a href="http://en.wikipedia.org/wiki/Grand_Fenwick">Duchy of Grand Fenwick</a>, has a tighter budget, and has asked you (their Royal Programmer) to compute what shape would get best maximum enclosed-area/wall-length ratio.
+</p>
+<p>
+You have done some preliminary calculations on a sheet of paper.
+For a 2000 meter wall enclosing the 250 000 m<sup>2</sup> area the
+enclosed-area/wall-length ratio is 125.<br>
+Although not allowed , but to get an idea if this is anything better:  if you place a circle inside the square area touching the four sides the area will be equal to π*250<sup>2</sup> m<sup>2</sup> and the perimeter will be π*500 m, so the enclosed-area/wall-length ratio will also be 125.
+</p>
+<p>
+However, if you cut off from the square four triangles with sides 75 m, 75 m and 75√2 m the total area becomes 238750 m<sup>2</sup> and the perimeter becomes 1400+300√2 m. So this gives an enclosed-area/wall-length ratio of 130.87, which is significantly better.
+</p>
+<div align="center"><img src="project/images/p314_landgrab.gif"></div>
+<p>
+Find the maximum enclosed-area/wall-length ratio.<br>
+Give your answer rounded to 8 places behind the decimal point in the form abc.defghijk.
+</p>
+
+
+
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=7.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 366 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "8a080d12c5163d903b6212dd8086570") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Stone Game III</h2>
+<h3>Problem 366</h3>
+<div style="font-size:80%;color:#999;">Published on 07 January 2012 at 07:00 pm [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>
+Two players, Anton and Bernhard, are playing the following game.<br>
+There is one pile of n stones.<br>
+The first player may remove any positive number of stones, but not the whole pile.<br>
+Thereafter, each player may remove at most twice the number of stones his opponent took on the previous move.<br>
+The player who removes the last stone wins.
+</p>
+<p>
+E.g. n=5<br>
+If the first player takes anything more than one stone the next player will be able to take all remaining stones.<br>
+If the first player takes one stone, leaving four, his opponent will take also one stone, leaving three stones.<br>
+The first player cannot take all three because he may take at most 2x1=2 stones. So let's say he takes also one stone, leaving 2. The second player can take the two remaining stones and wins.<br>
+So 5 is a losing position for the first player.<br>
+For some winning positions there is more than one possible move for the first player.<br>
+E.g. when n=17 the first player can remove one or four stones.
+</p>
+<p>
+Let M(n) be the maximum number of stones the first player can take from a winning position <i>at his first turn</i> and M(n)=0 for any other position.
+</p>
+<p>
+∑M(n) for n≤100 is 728.
+</p>
+<p>
+Find  ∑M(n) for n≤10<sup>18</sup>.
+Give your answer modulo 10<sup>8</sup>.
+</p>
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=8.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

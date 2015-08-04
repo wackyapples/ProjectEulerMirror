@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 116 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "c21ca0c546d1646a953a480f68fb4") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Red, green or blue tiles</h2>
+<h3>Problem 116</h3>
+<div style="font-size:80%;color:#999;">Published on 03 March 2006 at 06:00 pm [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>A row of five black square tiles is to have a number of its tiles replaced with coloured oblong tiles chosen from red (length two), green (length three), or blue (length four).</p>
+<p>If red tiles are chosen there are exactly seven ways this can be done.</p>
+
+<table cellpadding="10" cellspacing="0" border="0" align="center">
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+<td colspan="2" style="background-color:#cc0000"><img src="images/spacer.gif" width="44" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td> </td>
+</tr>
+
+</table>
+
+<p>If green tiles are chosen there are three ways.</p>
+
+<table cellpadding="10" cellspacing="0" border="0" align="center">
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="3" style="background-color:#00cc00"><img src="images/spacer.gif" width="68" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="3" style="background-color:#00cc00"><img src="images/spacer.gif" width="68" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="3" style="background-color:#00cc00"><img src="images/spacer.gif" width="68" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td> </td>
+</tr>
+</table>
+
+<p>And if blue tiles are chosen there are two ways.</p>
+
+<table cellpadding="10" cellspacing="0" border="0" align="center">
+
+<tr>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+<td colspan="4" style="background-color:#0000cc"><img src="images/spacer.gif" width="92" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing="2" cellpadding="0" border="1">
+<tr>
+<td colspan="4" style="background-color:#0000cc"><img src="images/spacer.gif" width="92" height="20" alt=""></td>
+<td style="background-color:#000000"><img src="images/spacer.gif" width="20" height="20" alt=""></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<p>Assuming that colours cannot be mixed there are 7 + 3 + 2 = 12 ways of replacing the black tiles in a row measuring five units in length.</p>
+<p>How many different ways can the black tiles in a row measuring fifty units in length be replaced if colours cannot be mixed and at least one coloured tile must be used?</p>
+<p class="note">NOTE: This is related to <a href="problem=117.html">Problem 117</a>.</p>
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=3.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

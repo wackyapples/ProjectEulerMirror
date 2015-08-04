@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 450 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Hypocycloid and Lattice points</h2>
+<h3>Problem 450</h3>
+<div style="font-size:80%;color:#999;">Published on 15 December 2013 at 07:00 am [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>
+A hypocycloid is the curve drawn by a point on a small circle rolling inside a larger circle. The parametric equations of a hypocycloid centered at the origin, and starting at the right most point is given by:</p>
+<p style="text-align:center">
+$x(t) = (R - r) \cos(t) + r \cos(\frac {R - r} r t)$<br>
+$y(t) = (R - r) \sin(t) - r \sin(\frac {R - r} r t)$</p>
+<p>
+Where <var>R</var> is the radius of the large circle and <var>r</var> the radius of the small circle.
+</p>
+<p>
+Let $C(R, r)$ be the set of distinct points with integer coordinates on the hypocycloid with radius <var>R</var> and <var>r</var> and for which there is a corresponding value of <var>t</var> such that $\sin(t)$ and $\cos(t)$ are rational numbers.</p>
+<p>
+Let $S(R, r) = \sum_{(x,y) \in C(R, r)} |x| + |y|$ be the sum of the absolute values of the <var>x</var> and <var>y</var> coordinates of the points in $C(R, r)$.</p>
+<p>
+
+Let $T(N) = \sum_{R = 3}^N \sum_{r=1}^{\lfloor \frac {R - 1} 2 \rfloor} S(R, r)$ be the sum of $S(R, r)$ for <var>R</var> and <var>r</var> positive integers, $R\leq N$  and $2r &lt; R$.
+</p>
+<p>
+
+You are given:<br>
+
+<var>C</var>(3, 1) = {(3, 0), (-1, 2), (-1,0), (-1,-2)}<br><br>
+<var>C</var>(2500, 1000) =<br>
+</p>
+<ul>
+ {(2500, 0), (772, 2376), (772, -2376), (516, 1792),
+ (516, -1792), (500, 0), (68, 504), (68, -504),<br>(-1356, 1088), (-1356, -1088), (-1500, 1000), (-1500, -1000)}</ul>
+<i>Note: (-625, 0) is not an element of C(2500, 1000) because $\sin(t)$ is not a rational number for the corresponding values of <var>t</var>.</i>
+
+<p>
+<var>S</var>(3, 1) = (|3| + |0|) + (|-1| + |2|) + (|-1| + |0|) + (|-1| + |-2|) = 10</p>
+<p>
+<var>T</var>(3) = 10; <var>T</var>(10) = 524 ;<var>T</var>(100) = 580442; <var>T</var>(10<sup>3</sup>) = 583108600.
+</p>
+<p>
+Find <var>T</var>(10<sup>6</sup>).
+</p>
+
+
+</div>
+<br>
+<div style="text-align:center;" class="noprint">Answer not yet available</div>
+<div>Go to back to <a href="problems%3Bpage=9.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

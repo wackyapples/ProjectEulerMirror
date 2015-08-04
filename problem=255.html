@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 255 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "12b028b156b49faa1137fbda940ab5") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Rounded Square Roots</h2>
+<h3>Problem 255</h3>
+<div style="font-size:80%;color:#999;">Published on 11 September 2009 at 09:00 pm [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>We define the <i>rounded-square-root</i> of a positive integer <var>n</var> as the square root of <var>n</var> rounded to the nearest integer.</p>
+
+<p>The following procedure (essentially Heron's method adapted to integer arithmetic) finds the rounded-square-root of <var>n</var>:</p>
+<p>Let <var>d</var> be the number of digits of the number <var>n</var>.<br>
+If <var>d</var> is odd, set <var>x</var><sub>0</sub> = 2×10<sup>(<var>d</var>-1)⁄2</sup>.<br>
+If <var>d</var> is even, set <var>x</var><sub>0</sub> = 7×10<sup>(<var>d</var>-2)⁄2</sup>.<br>
+Repeat:</p>
+<p align="center">
+<img src="project/images/p255_Heron.gif"></p>
+<!--
+<table align='center'>
+<tr><td><var>x</var><sub><var>k</var>+1</sub> =</td>
+<td style='font-size:220%'>&#8970;</td>
+<td style='text-align:center;'><var>x</var><sub><var>k</var></sub> + &lceil;<var>n</var>&frasl;<var>x</var><sub><var>k</var></sub>&rceil;<br />
+<img src='images/blackdot.gif' width='75' height='1' alt='' /><br />
+2</td><td><td style='font-size:220%'>&#8971;</td></tr>
+</table> -->
+
+<p>until <var>x</var><sub><var>k</var>+1</sub> = <var>x</var><sub><var>k</var></sub>.
+</p>
+<p>As an example, let us find the rounded-square-root of <var>n</var> = 4321.<br>
+<var>n</var> has 4 digits, so <var>x</var><sub>0</sub> = 7×10<sup>(4-2)⁄2</sup> = 70.<br>
+<img src="project/images/p255_Example.gif">
+<!--<var>x</var><sub>1</sub> = &lfloor;(70 + &lceil;4321&frasl;70&rceil;)&frasl;2&rfloor; = 66.<br />
+<var>x</var><sub>2</sub> = &lfloor;(66 + &lceil;4321&frasl;66&rceil;)&frasl;2&rfloor; = 66.--><br>
+Since <var>x</var><sub>2</sub> = <var>x</var><sub>1</sub>, we stop here.<br>
+So, after just two iterations, we have found that the rounded-square-root of 4321 is 66 (the actual square root is 65.7343137…).
+</p>
+<p>The number of iterations required when using this method is surprisingly low.<br>
+For example, we can find the rounded-square-root of a 5-digit integer (10,000 ≤ <var>n</var> ≤ 99,999) with an average of 3.2102888889 iterations (the average value was rounded to 10 decimal places).
+</p>
+<p>Using the procedure described above, what is the average number of iterations required to find the rounded-square-root of a 14-digit number (10<sup>13</sup> ≤ <var>n</var> &lt; 10<sup>14</sup>)?<br>
+Give your answer rounded to 10 decimal places.
+</p>
+<p>Note: The symbols ⌊<var>x</var>⌋ and ⌈<var>x</var>⌉ represent the <dfn title="the largest integer not greater than x">floor function</dfn> and <dfn title="the smallest integer not less than x">ceiling function</dfn> respectively.
+</p>
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=6.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

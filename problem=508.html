@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 508 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Integers in base i-1</h2>
+<h3>Problem 508</h3>
+<div style="font-size:80%;color:#999;">Published on 22 March 2015 at 10:00 am [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>Consider the Gaussian integer i-1. A <b>base i-1 representation</b> of a Gaussian integer <var>a</var>+<var>b</var>i is a finite sequence of digits <var>d</var><sub><var>n</var>-1</sub><var>d</var><sub><var>n</var>-2</sub>...<var>d</var><sub>1</sub><var>d</var><sub>0</sub> such that:</p>
+
+<ul>
+<li>
+<var>a</var>+<var>b</var>i = <var>d</var><sub><var>n</var>-1</sub>(i-1)<sup><var>n</var>-1</sup> + <var>d</var><sub><var>n</var>-2</sub>(i-1)<sup><var>n</var>-2</sup> + ... + <var>d</var><sub>1</sub>(i-1) + <var>d</var><sub>0</sub>
+</li>
+<li>Each <var>d</var><sub><var>k</var></sub> is in {0,1}</li>
+<li>There are no leading zeroes, i.e. <var>d</var><sub>n-1</sub> ≠ 0, unless <var>a</var>+<var>b</var>i is itself 0</li>
+</ul>
+
+
+<p>Here are base i-1 representations of a few Gaussian integers:<br><br>
+11+24i → 111010110001101<br>
+24-11i → 110010110011<br>
+8+0i → 111000000<br>
+-5+0i → 11001101<br>
+0+0i → 0</p>
+
+Remarkably, every Gaussian integer has a unique base i-1 representation!<br><br>
+
+Define <var>f</var>(<var>a</var>+<var>b</var>i) as the number of 1s in the unique base i-1 representation of <var>a</var>+<var>b</var>i. For example, <var>f</var>(11+24i) = 9 and <var>f</var>(24-11i) = 7.<br><br>
+
+Define <var>B</var>(<var>L</var>) as the sum of <var>f</var>(<var>a</var>+<var>b</var>i) for all integers <var>a</var>, <var>b</var> such that |<var>a</var>| ≤ <var>L</var> and |<var>b</var>| ≤ <var>L</var>. For example, <var>B</var>(500) = 10795060.<br><br>
+
+Find <var>B</var>(10<sup>15</sup>) mod 1 000 000 007.
+</div>
+<br>
+<div style="text-align:center;" class="noprint">Answer not yet available</div>
+<div>Go to back to <a href="problems%3Bpage=11.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

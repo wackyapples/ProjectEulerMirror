@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+<title>Problem 159 - Project Euler</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="pe_template_style.css">
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript">
+   function check_ans(ans) {
+      if (md5(ans) === "2ab79df40adc1028d1fa83a6333db907") {
+         alert("Correct!");
+      } else {
+         alert("Sorry, that is incorrect!");
+      };
+   };
+</script>
+</head>
+
+<body>
+<div id="container">
+
+   <div id="nav" class="noprint">
+      <ul>
+<li><a href="about.html" title="About">About</a></li>
+<li id="current"><a href="problems.html" title="Problems">Problems</a></li>
+<li><a href="news.html" title="News">News</a></li>
+<li><a href="http://forum.projecteuler.net" title="Project Euler Forum">Forum</a></li>
+      </ul>
+   <div style="text-align:right;padding:30px 10px 0 0;">
+      <a href="rss2_euler.xml"><img src="images/icon_rss.png" alt="RSS Feed" title="RSS Feed"></a>
+   </div>
+   </div>
+
+
+   <div id="logo" class="noprint">
+      <img src="images/pe_banner.png" alt="Project Euler .net">
+   </div>
+
+   <div id="content">
+<div style="text-align:center;" class="print"><img src="images/pe_banner.png" alt="projecteuler.net" style="border:none;"></div>
+<h2>Digital root sums of factorisations</h2>
+<h3>Problem 159</h3>
+<div style="font-size:80%;color:#999;">Published on 30 June 2007 at 02:00 pm [Server Time]</div>
+<div class="problem_content" role="problem">
+<p>A composite number can be factored many different ways.  
+For instance, not including multiplication by one, 24 can be factored in 7 distinct ways:</p>
+<div style="margin-left:50px;">
+24 = 2x2x2x3<br>
+24 = 2x3x4<br>
+24 = 2x2x6<br>
+24 = 4x6<br>
+24 = 3x8<br>
+24 = 2x12<br>
+24 = 24
+</div>
+<p>Recall that the digital root of a number, in base 10, is found by adding together the digits of that number, 
+and repeating that process until a number is arrived at that is less than 10.  
+Thus the digital root of 467 is 8.</p>
+<p>We shall call a Digital Root Sum (DRS) the sum of the digital roots of the individual factors of our number.<br>
+ The chart below demonstrates all of the DRS values for 24.</p>
+<table align="center" border="1" cellpadding="2" cellspacing="0">
+<tr>
+<th>Factorisation</th>
+<th>Digital Root Sum</th>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">2x2x2x3</div></td>
+<td><div style="text-align:center;">9</div></td>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">2x3x4</div></td>
+<td><div style="text-align:center;">9</div></td>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">2x2x6</div></td>
+<td><div style="text-align:center;">10</div></td>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">4x6</div></td>
+<td><div style="text-align:center;">10</div></td>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">3x8</div></td>
+<td><div style="text-align:center;">11</div></td>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">2x12</div></td>
+<td><div style="text-align:center;">5</div></td>
+</tr>
+<tr>
+<td><div style="margin-left:20px;">24</div></td>
+<td><div style="text-align:center;">6</div></td>
+</tr>
+</table>
+<p>The maximum Digital Root Sum  of 24 is 11.<br>
+The function mdrs(<var>n</var>) gives the maximum Digital Root Sum of <var>n</var>. So  mdrs(24)=11.<br>
+Find ∑mdrs(<var>n</var>) for 1 &lt; <var>n</var> &lt; 1,000,000.</p>
+</div>
+<br>
+<div style="text-align:center;" class="noprint">
+   Answer: <input type="text" name="answer" id="answer" style="border:1px solid #999;width:100px;">
+   <button onclick="check_ans(document.getElementById('answer').value);">Check</button>
+</div>
+<script type="text/javascript">document.getElementById('answer').focus();</script><div>Go to back to <a href="problems%3Bpage=4.html">Problems</a>
+</div>
+</div>
+
+   <div id="footer" class="noprint">© Project Euler</div>
+
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div>
+</body>
+</html>

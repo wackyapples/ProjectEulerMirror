@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" >
+<channel>
+<title>Project Euler</title>
+<atom:link href="http://projecteuler.net/rss2_euler.xml" rel="self" type="application/rss+xml" /><link>http://projecteuler.net</link>
+<description>A website dedicated to the fascinating world of mathematics and programming.</description>
+<language>en</language>
+<copyright>projecteuler.net</copyright>
+<webMaster>no_reply@projecteuler.net (Colin Hughes)</webMaster>
+<lastBuildDate>Sun, 02 Aug 2015 16:16:33 +0200</lastBuildDate>
+<ttl>60</ttl>
+<item>
+<title>Project Euler Hacked</title>
+<link>http://projecteuler.net/news</link>
+<description><![CDATA[ <p><p>Sadly it seems that a malicious user has discovered a way to modify the contents of the DB. It is currently unclear how this occurred so in the meantime a decision has been made to take Project Euler offline and replace it with a temporary website. This will ensure that the problems, which are the primary reason Project Euler exists, remain accessible. During this time you will be pleased to learn that it is possible to check answers.</p>
+<p>Further updates will be made through this news feed.</p></p> ]]>
+(Sunday 02 August 2015: Project Euler Hacked)</description>
+<pubDate>Sun, 02 Aug 2015 01:00:00 +0200</pubDate>
+<guid isPermaLink="false">news_id_78</guid>
+</item>
+</channel>
+</rss>
