@@ -1,5 +1,5 @@
 # Project Euler Mirror
-Due to the recent [attack](https://projecteuler.net/news) on Project Euler, I thought it would be nice to throw together a (semi-functional) mirror of the website. The mirror is accessible at https://wackyapples.github.io/ProjectEulerMirror/
+Due to the recent [attack](https://projecteuler.net/news) on Project Euler, I thought it would be nice to throw together a (semi-functional) mirror of the website. The mirror is accessible at https://wackyapples.github.io/ProjectEulerMirror/ and https://bencreighton.org/euler/
 
 ## About
 This is a very simple project, it is essentially a wget mirror of the original Project Euler [site](https://projecteuler.net/) with the answer checking form replaced. Answers are now checked via MD5 hashes and JavaScript. The original MD5 hashes are borrowed from the kmkeen's excellent [Local Euler](http://kmkeen.com/local-euler/) project. MD5 hashes for inputted answers are calculated with blueimp's [JavaScript MD5](https://github.com/blueimp/JavaScript-MD5).
